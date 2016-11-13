@@ -49,3 +49,11 @@ endfunction " }}}
 function! instalint#DisableHighlightingDuplicatedWords() " {{{
     call instalint#DisableHighlighting('DuplicateAdjacentWords')
 endfunction " }}}
+
+function! instalint#EnableHighlightingNonbreakingSpace() " {{{
+    call instalint#EnableHighlighting('NonbreakingSpace', '\%xA0')
+endfunction " }}}
+
+function! instalint#DisableHighlightingNonbreakingSpace() " {{{
+    call instalint#DisableHighlighting('NonbreakingSpace')
+endfunction " }}}
