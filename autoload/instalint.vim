@@ -42,11 +42,11 @@ function! instalint#DisableHighlightingTabs() " {{{
     call instalint#DisableHighlighting('Tabs')
 endfunction " }}}
 
-function! instalint#EnableHighlightingDuplicatedWords() " {{{
+function! instalint#EnableHighlightingDuplicateAdjacentWords() " {{{
     call instalint#EnableHighlighting('DuplicateAdjacentWords', '\c\v<(\S+)\_\s+\1>')
 endfunction " }}}
 
-function! instalint#DisableHighlightingDuplicatedWords() " {{{
+function! instalint#DisableHighlightingDuplicateAdjacentWords() " {{{
     call instalint#DisableHighlighting('DuplicateAdjacentWords')
 endfunction " }}}
 
