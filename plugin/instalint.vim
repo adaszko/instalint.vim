@@ -32,7 +32,7 @@ function! s:buffer_left() " {{{
     endif
 
     for linter in g:instalint_filetypes[&filetype]
-        if linter != 'TrailingSpaces' && linter != 'TrailingSemicolons' && linter != 'Tabs' && linter != 'DuplicateAdjacentWords'
+        if linter != 'TrailingSpaces' && linter != 'TrailingSemicolons' && linter != 'Tabs' && linter != 'DuplicateAdjacentWords' && linter != 'NonbreakingSpace'
             throw printf("instalint:%s: Unknown Linter", linter)
         endif
     endfor
